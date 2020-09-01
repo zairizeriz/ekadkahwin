@@ -125,35 +125,44 @@
 .framed:hover {
   background: #fff;
 }
+
+.bottom-navigation {
+    max-width: 420px;
+    background: #282928;
+    margin: 0 auto;
+}
+
+.wedding-card {
+    max-width: 420px;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background: white;
+    border-radius: 3px;
+    padding-bottom: 100px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Nunito', serif;
+}
+
+.wedding-card .card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+	background-image:url('https://aliveinvite.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdU1hIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ba54d4f072baddfb1f35e4d56d6be0aee9435558/HeyMM_Constellation_Bg.png');
+}
+
+.wrapper{
+	text-align:center;
+}
+
     </style>
  </head>
  <body>
-
-   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-bottom">
-         <div class="navbar-nav mx-auto">
-            <a href="#" class="nav-item nav-link active mr-5">
-               <div style="text-align: center;">
-               <i  class="fas fa-calendar-check"></i>
-               <br><small>Calendar</small>
-               </div>
-            </a>
-            <a href="#" class="nav-item nav-link active mr-5">
-               <div style="text-align: center;">
-               <i class="fas fa-map-marker-alt"></i>
-               <br><small>Location</small>
-               </div>
-            </a>
-            <a href="#" class="nav-item nav-link active mr-5">
-               <div style="text-align: center;">
-                  <i class="fas fa-phone"></i>
-                  <br><small>Contact</small>
-               </div>
-            </a>
-
-         </div>
-  </nav>
-    <div class="container">
-       <div class="row">
+ <div class="row">
           <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2 pl-0 pr-0">
 <!--              <div class="p-3 bg-dark shadow aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="1500">
                 <div class="row w-100 m-0 justify-content-center">
@@ -281,6 +290,44 @@
              </div>
           </div>
        </div>
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-bottom bottom-navigation">
+         <div class="navbar-nav mx-auto">
+            <a href="#" class="nav-item nav-link active mr-5">
+               <div style="text-align: center;">
+               <i  class="fas fa-calendar-check"></i>
+               <br><small>Calendar</small>
+               </div>
+            </a>
+            <a href="#" class="nav-item nav-link active mr-5">
+               <div style="text-align: center;">
+               <i class="fas fa-map-marker-alt"></i>
+               <br><small>Location</small>
+               </div>
+            </a>
+            <a href="#" class="nav-item nav-link active mr-5">
+               <div style="text-align: center;">
+                  <i class="fas fa-phone"></i>
+                  <br><small>Contact</small>
+               </div>
+            </a>
+
+         </div>
+  </nav>
+    <div class="wedding-card">
+             <div class="card">
+				<div class="wrapper font1">
+				   <div style="color: #e3daec">
+					  <p class="opening">Walimatul Urus <br><i>Wedding Invitation</i></p>
+				   </div>
+				   <div class="wedding-couple" style="color: #e3daec">
+					  <p class="groom">Nabilah</p>
+					  <p class="with">&amp;</p>
+					  <p class="bride">Shaiful Nizam Iskandar</p>
+				   </div>
+				   <p class="date" style="color: #e3daec; "><span class="week-day">Saturday,</span><span class="day">14</span><span class="month">December</span><span class="year">2019</span></p>
+				   <p class="location" style="color: #e3daec">Jalan Pertanian, Kampung Tengah, Jalan Triang, 28000 Temerloh</p>
+				</div>
+             </div>
     </div>
     <script
   src="https://code.jquery.com/jquery-3.5.1.min.js"
