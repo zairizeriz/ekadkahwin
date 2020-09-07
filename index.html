@@ -101,7 +101,7 @@
      }
      .time{
      font-size: 20px;
-     margin-top: 15px;
+     margin: 15px 25px 15px 25px;
      }
      .framed {
      width: 100%;
@@ -153,12 +153,11 @@
      background: #fff;
      }
      .bottom-navigation {
-     max-width: 420px;
-     background: #282928;
-     margin: 0 auto;
+      background: #282928;
+      margin: 0 auto;
      }
      .wedding-card {
-     max-width: 420px;
+     /* max-width: 420px; */
      margin: 0 auto;
      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
      background: white;
@@ -214,7 +213,6 @@
      .created{
        text-align: center;
        margin-top:5px;
-       width: 420px;
        color: white;
        font-size: 12px;
      }
@@ -684,7 +682,7 @@
      /*       document.getElementById("demo").innerHTML = days + " Hari " + hours + " Jam "
        + minutes + " Minit " + seconds + " Saat "; */
      
-       document.getElementById("timer-container").innerHTML = `<div class='time font2 col-lg'>${days} <br/><br/> <span>Hari</span></div><div class='time font2 col-lg'>${hours} <br/><br/> <span>Jam</span></div><div class='time col-lg font2'>${minutes} <br/><br/> <span>Minit</span></div><div class='time font2 col-lg'>${seconds} <br/><br/> <span>Saat</span></div>`;
+       document.getElementById("timer-container").innerHTML = `<div class='time font2 '>${days} <br/><br/> <span>Hari</span></div><div class='time font2 '>${hours} <br/><br/> <span>Jam</span></div><div class='time  font2'>${minutes} <br/><br/> <span>Minit</span></div><div class='time font2 '>${seconds} <br/><br/> <span>Saat</span></div>`;
      
        // If the count down is finished, write some text
        if (distance < 0) {
