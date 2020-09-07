@@ -66,6 +66,10 @@
      font-family: "cookiesparty";
      src: url("./assets/fonts/cookiesparty/Cookies Party.otf");
      }		
+     @font-face {
+     font-family: "moneyhoney";
+     src: url("./assets/fonts/moneyhoney/Money Honey.ttf");
+     }		
      body{
      margin: 0;
      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -94,6 +98,10 @@
      }
      .font2{
      font-family: cookiesparty;
+     }
+
+     .font3{
+       font-family: moneyhoney;
      }
      .owl-carousel .item img{
      display: block;
@@ -205,8 +213,8 @@
      margin: 0 auto;
      }
 
-     .second-card > p {
-       padding: 10px;
+     .second-card p {
+       padding: 10px !important;
      }
 
 
@@ -418,7 +426,7 @@
    <div class="wedding-card">
       <div class="card first-card">
          <div class="wrapper" style="margin-top: 30px;">
-            <div class="font1" style="color: #c59a3a;font-size: 28px;">
+            <div class="font3" style="color: #c59a3a;font-size: 28px;">
                <p class="opening ">Walimatul Urus</p>
                <br/>
             </div>
@@ -439,7 +447,7 @@
             <div style="margin-top:-70px;margin-bottom:-100px;">
                <img width="250px" src="assets/images/bismillah.png">
             </div>
-            <div>
+            <div class=" font3">
                <p style="color: #c59a3a;">
                   Dengan Penuh Kesyukuran Kami
                <p>
@@ -486,7 +494,7 @@
             </div>
          </div>
       </div>
-      <div class="card" style="min-height: 300px;">
+      <div class="card font3" style="min-height: 300px;">
          <div class="font1" style="color: #c59a3a;font-size: 18px;text-align:center;margin-top:40px; padding: 20px;">
             <p>
                <small>"Ya Allah Yang Maha Mencipta, Jadikanlah majlis ini majlis yang mendapat keberkatan dan keredhaanMu, kekalkanlah ikatan perkahwinan mereka sepanjang hayat, tetapkanlah kasih sayang antara mereka selagi tidak melebihi kasih padaMu."</small>
@@ -497,13 +505,13 @@
          </div>
       </div>
       <div class="card" style="min-height: 300px;">
-         <div class="font1" style="color: #43756b;font-size: 24px;text-align:center;margin-top:40px">
+         <div class="font3" style="color: #43756b;font-size: 24px;text-align:center;margin-top:40px">
             <p class="opening ">Countdown <br></p>
          </div>
          <div class="" id="timer-container" style="text-align:center;"></div>
       </div>
       <div class="card " style="align-items:inherit;min-height: 300px" >
-         <div class="font1" style="color: #43756b;font-size: 24px;text-align:center;margin-top:40px"   >
+         <div class="font3" style="color: #43756b;font-size: 24px;text-align:center;margin-top:40px"   >
             <p class="opening ">Gallery <br></p>
          </div>
          <br/><br/>
@@ -518,7 +526,7 @@
          </div>
       </div>
       <div class="card" style="min-height: 300px;padding:20px">
-       <div class="font1" style="color: #43756b;font-size: 24px;text-align:center;margin-top:40px;"   >
+       <div class="font3" style="color: #43756b;font-size: 24px;text-align:center;margin-top:40px;"   >
           <p class="opening ">Video Lagu <br></p>
        </div>
        <div class="embed-responsive embed-responsive-16by9 rounded-lg shadow">
@@ -698,7 +706,7 @@
      /*       document.getElementById("demo").innerHTML = days + " Hari " + hours + " Jam "
        + minutes + " Minit " + seconds + " Saat "; */
      
-       document.getElementById("timer-container").innerHTML = `<div class='time font2 '>${days} <br/><br/> <span>Hari</span></div><div class='time font2 '>${hours} <br/><br/> <span>Jam</span></div><div class='time  font2'>${minutes} <br/><br/> <span>Minit</span></div><div class='time font2 '>${seconds} <br/><br/> <span>Saat</span></div>`;
+       document.getElementById("timer-container").innerHTML = `<div class='time font3 '>${days} <br/><br/> <span>Hari</span></div><div class='time font3 '>${hours} <br/><br/> <span>Jam</span></div><div class='time  font3'>${minutes} <br/><br/> <span>Minit</span></div><div class='time font3 '>${seconds} <br/><br/> <span>Saat</span></div>`;
      
        // If the count down is finished, write some text
        if (distance < 0) {
